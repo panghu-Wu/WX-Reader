@@ -1,0 +1,30 @@
+<!--miniprogram/pages/read1/read1.wxml-->
+<view style="height:100%;position:fixed;width:100%;">
+  <scroll-view scroll-y="false"  bindscroll="scroll" style="height:100%;" scroll-with-animation='true' scroll-top='{{ topNum }}'>
+    <!--导航栏-->
+    <view class="page-group {{scrollTop > 360 ? 'page-group-position' : ''}}">
+      <view class="page-nav-list" bindtap="gotoFirstPage"><text>书架</text></view>
+      <view class="page-nav-list" bindtap="gotoCatalogPage"><text>目录</text></view>
+      <view class="page-nav-list" bindtap="bindBackground"><text>{{bg_choice}}</text></view>
+      <view class="page-nav-list" bindtap="bindShowMsg"><text class="p1">字体</text></view>
+    </view>
+    <!-- 下拉需要显示的列表 -->
+    <view  class="page-group {{scrollTop > 360 ? 'page-group-position' : ''}}" wx:if="{{select}}">
+      <view class="select_one" bindtap="magnifFontSize" style="color:#fff">增大字体</view>
+      <view class="select_one" bindtap="shrinkFontSize" style="color:#fff">减小字体</view>
+    </view>
+    <!--内容-->
+    <view class="goods-list" style="background-color:{{bg_color}}">
+      <view style="color:{{color}} ">
+        <view style="font-size:{{font_size}}rpx;font-weight:bold;margin-left:10rpx;">{{chapter.book}} > {{chapter.name}}</view>
+        <view class="book-content" style="font-size:{{font_size}}rpx">{{chapter.content}}</view>
+        <view style="display:flex;margin-top:30px;">
+          <button class="button-choice" style="width:35%;" bindtap="gotoLastPage" data-book_name="{{chapter.book}}" data-chapter_rank="{{chapter.rank}}">上一章</button>
+          <button class="button-choice" style="width:35%;" bindtap="gotoNextPage" data-book_name="{{chapter.book}}" data-chapter_rank="{{chapter.rank}}">下一章</button>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+

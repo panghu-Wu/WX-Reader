@@ -1,0 +1,23 @@
+<!--miniprogram/pages/bookshelf/bookshelf.wxml-->
+<view class="shelf-bar {{scrollTop > 360 ? 'page-group-position' : ''}}">
+  <text class="iconfont icon-fangzi2" style="font-size: 25px;" bindtap="gotoIndexPage"></text>
+  <view class="bar-name">我的书架</view>
+  <text class="iconfont icon-guanli" bindtap="gotoManagePage"></text>
+</view>
+
+<view class="link">
+  <view class="link_child" wx:for="{{ne}}" wx:for-item="item" wx:key="index">
+    <view class="book">
+      <view>
+        <image class="book-picture" src="cloud://richang-2gbb4c9c67af1d09.7269-richang-2gbb4c9c67af1d09-1303970356/images/book/{{item.img}}"  bindtap="gotoCatalogPage" data-book_id="{{item.book_id}}" data-chapter_num="{{item.chapter_num}}"></image>
+      </view>
+      <view> 
+        
+        <text class="book-title">《{{item.name}}》</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+

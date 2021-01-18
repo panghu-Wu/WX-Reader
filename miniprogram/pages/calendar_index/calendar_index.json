@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "calendar": "/components/calendar/calendar"
+  },
+  "userid": "用户id",
+  "txtid": "备忘id",
+  "txtcontent": "备忘内容",
+  "titlecontent": "备忘标题",
+  "date":1,
+  "month":1,
+  "year":1,
+  "imgURL":"图片地址"
+}

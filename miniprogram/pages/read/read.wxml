@@ -1,0 +1,4 @@
+<!--miniprogram/pages/read/read.wxml-->
+<view class="guide">
+  <text class="p">该程序保证用户隐私安全，请放心使用。如有bug，请联系：2376636896@qq.com。</text>
+</view>

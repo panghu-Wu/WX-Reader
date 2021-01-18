@@ -1,0 +1,69 @@
+/* miniprogram/pages/read1/read1.wxss */
+.page-banner{height: 500rpx;background-color: greenyellow;padding: 20rpx;color:#fff;}
+.page-group{
+  display: table;
+  background-color: rgb(92, 57, 97);
+  width: 100%;
+  height: 100rpx;
+  table-layout: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.page-group-position{
+  position: fixed;
+}
+.page-nav-list{
+  padding:30rpx 0 ;
+  display: table-cell;
+  text-align: center;
+  color: #fff;
+}
+
+.select_one{
+  background-color: rgb(92, 57, 97);
+  color: #fff;
+  width: 80%;
+  height: 60rpx;
+  table-layout: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+.select_box{
+  background-color: rgb(92, 57, 97);
+  width: 100%;
+  height: 60rpx;
+  table-layout: fixed;
+  position: relative;
+  color: #fff;
+  top: 0;
+  left: 0;
+}
+
+.button-choice{
+    /* 修改圆角→直角 */
+    border-radius: 50;
+    /* padding */
+    padding: 0;
+    margin-top: 20rpx;
+    margin-bottom: 40rpx;
+    background-color: rgb(235, 235, 235);
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20rpx;
+    line-height: 38px; 
+}
+.goods-other{
+  background-color: rgb(206, 192, 171);
+  padding: 20rpx;
+  columns: #000000;
+}
+
+.book-content{
+  margin: 10rpx;
+  text-indent: 2em;
+}

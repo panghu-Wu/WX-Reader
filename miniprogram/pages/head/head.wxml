@@ -1,0 +1,5 @@
+<!--miniprogram/pages/head/head.wxml-->
+<view wx:if="{{show_button}}" class="count_botton fade_in" bindtap="switchTab">
+  开始阅读
+</view>
+<image class="bg_img" src="{{bg_img}}"></image>

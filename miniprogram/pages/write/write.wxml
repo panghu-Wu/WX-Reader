@@ -1,0 +1,27 @@
+<view>
+  <table><tr>
+    <td>
+      <image bindtap="upload" class="log" src="../../images/img2.jpg" mode="cover" ></image>
+    </td>
+    <td>
+      <image bindtap="submit_imformation" class="log2" src="../../images/submit.jpg" mode="cover" data-date="{{selectdate}}" data-month="{{selectmonth}}" data-year="{{selectyear}}" data-img="{{imgURL}}"></image>
+    </td>
+  </tr></table>
+ 
+  <view class="container">
+    <image src="{{imgURL}}" mode="cover" ></image>
+    <block wx:for="{{files}}" wx:key="*this">
+      <view class="list-item" bindtap="previewImage" id="{{item}}">
+        <image class="image1" src="{{item}}"mode="aspectFit" >
+          <icon type='cancel' class="image_remove"  catchtap="removeImage"></icon>
+        </image>
+      </view>
+    </block>
+
+  </view>
+  <view>
+    <input class="input_title" placeholder="请输入标题" bindinput="titleInput"></input>
+  </view>
+  <textarea class="text" placeholder="备忘信息" bindinput="textInput"></textarea>
+  <view class="words">0/200</view>
+</view>

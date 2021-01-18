@@ -1,0 +1,31 @@
+/* miniprogram/pages/secondPage/secondPage.wxss */
+.placeholder{
+  margin: 5px;
+  padding: 0 10px;
+  text-align: center;
+  background-color: #F7F7F7;
+  height: 2.3em;
+  line-height: 2.3em;
+  color: rgba(0, 0, 0, 0.514);
+  border: 3rpx solid #c4c2c2;
+}
+.placeholder_right{
+  margin: 5px;
+  padding: 0 10px;
+  padding-right: 8px;
+  text-align: center;
+  background-color: #F7F7F7;
+  height: 2.3em;
+  line-height: 2.3em;
+  color: rgba(0,0,0,0.514);
+}
+.weui-navigation-bar__inner, .weui-navigation-bar__inner .weui-navigation-bar__left {
+  width: 100%;
+  background-color: #F7F7F7;
+}
+.intro_text{
+  overflow: inherit;
+  color: rgba(0,0,0,.5);
+  font-size: 14px;
+  padding-top: 4px;
+}

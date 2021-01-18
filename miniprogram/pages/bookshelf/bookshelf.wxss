@@ -1,0 +1,74 @@
+/* miniprogram/pages/bookshelf/bookshelf.wxss */
+@import "../iconfont/iconfont.wxss";
+@import "../iconfont/iconfont2.wxss";
+page{
+  height:100%;
+}
+.shelf-bar{
+  display: flex;
+  background-color: rgb(92, 57, 97);
+  width: 100%;
+  height: 100rpx;
+  table-layout: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+.page-group{
+  display: table;
+  background-color: rgb(92, 57, 97);
+  width: 100%;
+  height: 100rpx;
+  table-layout: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.shelf-bar-position{
+  position: fixed;
+}
+.bar-name{
+  font-size: 40;
+  color: white;
+  text-align: center;
+  letter-spacing:3rpx;
+  margin: 30rpx;
+  padding: 20rpx;
+  width: 60%;
+}
+.book{
+  display: block; 
+  margin: 10rpx;
+  border: 3rpx solid #c4c2c2;
+	border-radius: 10rpx;
+  padding: 10rpx;
+  width: 210rpx;
+  text-align: center;
+}
+.book-picture{
+  height: 280rpx;
+  width: 200rpx;
+}
+.book-title{
+  color: #000000;
+  font-size: 32rpx;
+}
+.book-writer{
+  color: #505050;
+  font-size: 35rpx;
+}
+.link {
+  display: flex; flex-direction: row;
+  flex-wrap: wrap; width: 742rpx;
+  margin: 0 auto; position: relative;
+  left: 0rpx; 
+ } 
+ .link_child {
+  width: 32%;
+ } 
+ .link_child:not(:nth-child(3n)){
+  margin-right: 10rpx; 
+ }
+

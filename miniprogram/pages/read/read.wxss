@@ -1,0 +1,4 @@
+/* miniprogram/pages/read/read.wxss */
+.p{
+  padding: 20rpx;
+}

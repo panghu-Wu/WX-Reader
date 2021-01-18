@@ -1,0 +1,60 @@
+<!--miniprogram/pages/secondPage/secondPage.wxml-->
+<view class="page__bd">
+      <view class="weui-navigation-bar">
+        <view class="weui-navigation-bar__placeholder" style="visible: hidden;"></view>
+        <view class="weui-navigation-bar__inner">
+          <view class="weui-flex__item">
+            <view class='weui-navigation-bar__left'>
+                <view bindtap="_goBack" class="weui-navigation-bar__button weui-navigation-bar__btn_goback"></view>
+            </view>
+          </view>
+          <view class="weui-flex__item">
+            <view class="placeholder_right">
+              <view bindtap="gotoBookshelf">书架</view>
+            </view>
+          </view>
+        </view>
+      </view>
+</view>
+
+<view class="weui-panel__bd">
+  <navigator wx:for="{{array}}" wx:for-item="item" wx:key="book_id" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="navigateTo">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="cloud://richang-2gbb4c9c67af1d09.7269-richang-2gbb4c9c67af1d09-1303970356/images/book/{{item.img}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.name}}</view>
+                        <view class="weui-media-box__desc">作 者：{{item.writer}}</view>
+                    </view>
+  </navigator>
+</view>
+
+<view class="page__bd page__bd_spacing">
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder" bindtap="gotoRead" data-rank="1">开始阅读</view></view>
+            <view class="weui-flex__item"><view class="placeholder" bindtap="PushOrPopBook" >{{choice}}</view></view>
+        </view>
+</view>
+
+<view class="weui-panel__bd">
+  <view class="weui-media-box weui-media-box_text"wx:for="{{array}}" wx:for-item="item" wx:key="book_id">
+    <view class="weui-media-box__title weui-media-box__title_in-text" style="font-size: 36rpx;">简介：</view>
+    <text class="weui-media-box__desc" class="intro_text">{{item.introduction}}</text>
+  </view>
+</view>
+
+<view class="weui-panel">
+            <view class="weui-panel__hd">章节列表</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+                        <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active" wx:for="{{list}}" wx:for-item="item" wx:key="name">
+                            <view class="weui-cell__bd weui-cell_primary" bindtap="gotoRead" data-rank="{{item}}">
+                                <view>第{{item}}章</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+</view>

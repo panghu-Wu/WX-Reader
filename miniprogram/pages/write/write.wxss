@@ -1,0 +1,68 @@
+Page{
+  background: #f6f6f6;
+  display: flex;
+}
+@import "../../style/guide.wxss";
+.uploader-container {
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx 20rpx 20rpx 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.uploader-image {
+  width: 100%;
+  height: 360rpx;
+}
+.input_title{
+  display: block;
+  border:3px;
+  border-radius:5px;
+  background-color:rgb(255, 255, 255);
+  padding: 10px;
+  resize: none;
+  height:1.41176471em;min-height:1.41176471em;line-height:1.41176471
+}
+
+
+.text{
+  margin-top:20px;
+  border:3px;
+  border-radius:5px;
+  background-color:rgb(255, 255, 255);
+  width: 355px;
+  height: 400px;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  padding: 10px;
+  resize: none;
+}
+
+.words{
+  background-color:rgb(255, 255, 255);
+  text-align:right;
+  opacity:0.5;
+}
+
+.log{
+  width: 65rpx;
+  height: 50rpx;
+  display: inline-block;
+}
+.log2{
+  width: 50rpx;
+  height: 50rpx;
+  position:absolute;
+  right: 5px;
+  display: inline-block;
+}
+
+.image_remove{
+  margin-top:-100px;
+  position: absolute;
+  right: 0;
+}

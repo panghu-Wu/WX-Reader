@@ -1,0 +1,28 @@
+/**index.wxss**/
+@import "../../style/guide.wxss";
+.other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200rpx;
+  background: #ccc;
+  font-size: 30rpx;
+  color: #666;
+}
+
+
+.log{
+  width: 150rpx;
+  height: 150rpx;
+  position:absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.time{
+  height: 40px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
